@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="login-right">
-            <img src="img/img1.png" class="d-block w-100" alt="KOPIN">
+            <img src="img/login.png" class="d-block w-100" alt="KOPIN">
             <a href="/" class="btn-home nuxt-link-active">Kembali ke homepage</a>
         </div>
     </section>

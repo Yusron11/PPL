@@ -1,0 +1,527 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* == STYLE NAAVBAR == */
+.navbar {
+  padding-bottom: 10px;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+  font-weight: bold;
+}
+
+.navbar-nav li.nav-item a.nav-link:hover,
+.navbar-nav li.nav-item a.nav-link.active {
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+  color: #000; /* Warna teks pada hover dan active */
+}
+/* == END STYLE NAAVBAR == */
+
+
+/* == STYLE BANNER HOME == */
+.banner {
+  background-color: #D6A34A;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.banner-left {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.banner-right {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 10px;
+  }
+
+  .banner-wrap {
+    flex-direction: column;
+  }
+
+  .banner-left,
+  .banner-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .banner-right {
+    order: -1;
+    margin-bottom: 10px;
+  }
+}
+
+.banner-left h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.banner-left p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.banner-left .cta {
+  display: inline-block;
+  background-color: #fff;
+  color: #0b0c0b;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* == END STYLE BANNER HOME == */
+
+
+/* == STYLE lAYANAN HOME == */
+.layanans {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.layanan-wrapper {
+  background-color: #5A431B;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.layanan-card {
+  width: 45%;
+  margin: 10px;
+  border: none; /* Menghilangkan border bagian luar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan pada card */
+}
+
+.layanan-card:hover {
+  transform: scale(1.05);
+}
+
+.layanan-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+
+.layanan-card img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.layanan-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.layanan-card p {
+  margin-bottom: 0;
+  text-align: center;
+}
+/* == END STYLE lAYANAN HOME == */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* == STYLE PRODUK == */
+.row-produk {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  margin-top: 30px;
+}
+
+.col-md-3,
+.col-sm-6 {
+  padding: 15px;
+}
+
+.products {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 300px; /* Sesuaikan dengan tinggi yang diinginkan */
+}
+
+.product-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #888;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-link:hover .products {
+  border-color: #5A431B; /* Sesuaikan warna sesuai kebutuhan */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sesuaikan efek bayangan sesuai kebutuhan */
+}
+
+.product-link:hover .product-image {
+  transform: scale(1.05); /* Sesuaikan skala sesuai kebutuhan */
+}
+/* == END STYLE PRODUK == */
+
+
+/* == STYLE BANNER PRODUK == */
+.product-banner {
+    background-color: #D6A34A;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner-image {
+    max-height: 200px;
+}
+
+.banner-image-left {
+    margin-right: 20px;
+}
+
+.banner-image-right {
+    margin-left: 20px;
+}
+
+.banner-text {
+    color: #111010;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .banner-image {
+        display: none;
+    }
+
+    .col-md-3,
+    .col-sm-6 {
+        width: 50%; /* Show two products per row on small screens */
+        max-width: 50%;
+    }
+}
+/* == END STYLE BANNER PRODUK == */
+
+
+/* == STYLE PRODUK == */
+.product-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-images {
+  width: 35%;
+  float: left;
+  margin-right: 5%;
+}
+
+.product-images img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  width: 50%;
+  float: right;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-price,
+.product-stock {
+  font-size: 12px;
+}
+
+.order-container {
+  margin-top: 25%;
+}
+
+.order-button {
+  background-color: #5A431B;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+
+.navbar-product {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.navbar-button {
+  background-color: transparent;
+  border: none;
+  color: #5A431B;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar-button.active {
+  color: #000;
+  font-weight: bold;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+
+.seller-info {
+  display: none;
+  text-align: center;
+}
+
+.seller-info.active {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.seller-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.seller-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-description {
+  display: none;
+  text-align: left;
+}
+
+.product-description.active {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.product-description h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-description p {
+  font-size: 16px;
+}
+/* == END STYLE PRODUK == */
+
+
+/* == STYLE PESAN == */
+
+.form-container {
+  padding-right: 15px;
+}
+
+.produk-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.produk-details {
+  margin-top: 10px;
+}
+
+.produk-images {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.produk-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.produk-price-stock {
+  display: flex;
+  flex-direction: column;
+}
+
+.produk-price {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.produk-stock {
+  font-size: 16px;
+}
+
+.btn-pesan {
+  background-color: #5A431B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* == END STYLE PESAN == */
+
+.modal {
+  display: none; /* Modal default hidden */
+  position: fixed; /* Position fixed */
+  z-index: 9999; /* Set a high z-index value to make sure it appears on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-dialog {
+  position: relative;
+  margin: 10% auto; /* Center modal vertically and horizontally */
+  padding: 10px;
+  width: 80%; /* Set modal width */
+  max-width: 500px; /* Set maximum modal width */
+  background-color: #fff; /* Modal background color */
+  border-radius: 5px;
+}
+
+.modal-content {
+  padding: 20px;
+  border: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px 0;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.btn-batal,
+.btn-bayar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-batal {
+  background-color: #6c757d;
+  margin-right: 10px;
+}
+
+/* Optional: Add animation to the modal */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.modal.fade {
+  animation: modalFadeOut 0.3s forwards;
+}
+
+.modal.show {
+  animation: modalFadeIn 0.3s forwards;
+}

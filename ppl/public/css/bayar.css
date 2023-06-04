@@ -1,0 +1,251 @@
+.product-banner {
+    background-color: #D6A34A;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner-text {
+    color: #111010;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* 1. Posisi conten di center */
+.ptf-body {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 2. Styling untuk bagian wwc-checkout-message */
+.wwc-checkout-message {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.wwc-checkout-message__title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.wwc-checkout-message__desc {
+  color: #666;
+}
+
+a.button.rt-btn--whatsapp {
+  display: inline-block;
+  background-color: #45b044;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+/* 3. Styling untuk tabel woocommerce-order-overview */
+.woocommerce-order-overview {
+  margin-bottom: 30px;
+}
+
+.woocommerce-order-overview li {
+  list-style-type: none;
+}
+
+.woocommerce-order-overview__order,
+.woocommerce-order-overview__date,
+.woocommerce-order-overview__total,
+.woocommerce-order-overview__payment-method {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.woocommerce-order-overview__order {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.woocommerce-order-overview__payment-method {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.woocommerce-order-overview__order strong,
+.woocommerce-order-overview__date strong,
+.woocommerce-order-overview__total strong,
+.woocommerce-order-overview__payment-method strong {
+  font-weight: bold;
+}
+
+.woocommerce-order-overview__order::before,
+.woocommerce-order-overview__date::before,
+.woocommerce-order-overview__total::before,
+.woocommerce-order-overview__payment-method::before {
+  content: attr(data-label);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 4. Styling untuk bagian woocommerce-bacs-bank-details */
+.woocommerce-bacs-bank-details ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style: none; /* Menghilangkan titik pada list item */
+}
+
+.woocommerce .wc-bacs-bank-details-account-name {
+  background-color: #D6A34A;
+  border: 1px solid #ccc;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 8px 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.woocommerce-bacs-bank-details h3.wc-bacs-bank-details-account-name {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.woocommerce-bacs-bank-details h3.wc-bacs-bank-details-account-name + ul {
+  margin-top: -10px;
+}
+
+/* 5. Styling untuk bagian woocommerce-order-details */
+
+.woocommerce-order-details h2.woocommerce-order-details__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.woocommerce-order-details table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.woocommerce-order-details thead tr {
+  background-color: #D6A34A;
+}
+
+.woocommerce-order-details thead th {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 8px 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.woocommerce-order-details thead th.woocommerce-table__product-name.product-name {
+  border-top-left-radius: 10px;
+}
+
+.woocommerce-order-details thead th.woocommerce-table__product-table.product-total {
+  border-top-right-radius: 10px;
+}
+
+.woocommerce-order-details th.product-name {
+  width: 70%;
+}
+
+.woocommerce-order-details tbody td {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+}
+
+.woocommerce-order-details .rt-cart-item {
+  display: flex;
+}
+
+.woocommerce-order-details .rt-cart-item__thumbnail {
+  margin-right: 10px;
+}
+
+.woocommerce-order-details .rt-cart-item__thumbnail img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.woocommerce-order-details .rt-cart-item__body {
+  flex-grow: 1;
+}
+
+.woocommerce-order-details .rt-cart-item__title a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.woocommerce-order-details .rt-cart-item__meta {
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.woocommerce-order-details .rt-cart-item__price {
+  font-weight: bold;
+}
+
+.woocommerce-order-details tfoot th,
+.woocommerce-order-details tfoot td {
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 15px;
+}
+
+.woocommerce-order-details tfoot th:first-child,
+.woocommerce-order-details tfoot td:first-child {
+  border-left: 1px solid #ccc;
+}
+
+.woocommerce-order-details tfoot th:last-child,
+.woocommerce-order-details tfoot td:last-child {
+  border-right: 1px solid #ccc;
+}
+
+/* 6. Styling untuk tombol Kembali ke beranda */
+
+.rt-thankpage-action {
+  text-align: center;
+}
+
+.rt-thankpage-action .btn-kembali {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D6A34A;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ptf-footer {
+  background-color: #5A431B;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+

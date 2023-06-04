@@ -1,9 +1,16 @@
 @extends('dashboard.pelanggan.main')
 
 @section('container')
+ 
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <img src="img/no-data.png" class="img-fluid" alt="...">
+                <p><strong>Cari Kopi Berkualitas di KOPIN</strong></p>
+                <p>Pilih produk yang kamu minati untuk mendapatkan biji kopi terbaik!</p>
+                <a href="/products" class="btn btn-primary">Cari Produk</a>
+            </div>
+        </div>
+    </div>
 
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Selamat Datang {{ auth()->user()->role }} {{ auth()->user()->name }}</h1>
-</div>
-    
 @endsection

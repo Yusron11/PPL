@@ -8,12 +8,6 @@ use App\Helpers\Helper;
 
 class ProductController extends Controller
 {
-    // public function index(){
-    //     return view ('products', [
-    //         "title" => "Produk",
-    //         "products" => Product::with('user')->get()
-    //     ]);
-    // }
     public function index()
     {
         $products = Product::with('user')->get()->map(function ($product) {
@@ -27,12 +21,14 @@ class ProductController extends Controller
         ]);
     } 
 
-    public function show(Product $product){
-        $price = Helper::harga($product->price);
-        return view ('product', [
+    public function show($slug)
+    {
+        $product = Product::with('user')->where('slug', $slug)->firstOrFail();
+        $product->price = Helper::harga($product->price);
+
+        return view('product', [
             "title" => "Produk",
             "product" => $product,
-            "price" => $price
         ]);
     }
 

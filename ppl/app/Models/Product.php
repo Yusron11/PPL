@@ -16,6 +16,10 @@ class Product extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function order(){
+        return $this->hasMany(Order::class);
+    }
+
     protected static function booted()
     {
         static::creating(function ($product) {

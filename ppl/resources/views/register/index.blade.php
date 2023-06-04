@@ -30,7 +30,7 @@
 
                         <div class="register-form">
                             <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Masukkan Nama Lengkap" value="{{ old('name') }}" required>
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Masukkan Nama Lengkap" value="{{ old('name') }}">
                             @error('name')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -39,7 +39,7 @@
                         </div>
                         <div class="register-form">
                             <label for="name" class="form-label">Username</label>
-                            <input type="text" class="form-control @error('username') is-invalid @enderror" name="username" placeholder="Masukkan Username" value="{{ old('username') }}" required>
+                            <input type="text" class="form-control @error('username') is-invalid @enderror" name="username" placeholder="Masukkan Username" value="{{ old('username') }}">
                             @error('username')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -48,7 +48,7 @@
                         </div>
                         <div class="register-form">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Masukkan Email" value="{{ old('email') }}" required>
+                            <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Masukkan Email" value="{{ old('email') }}">
                             @error('email')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -57,7 +57,7 @@
                         </div>
                         <div class="register-form">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Masukkan Password" required>
+                            <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Masukkan Password">
                             @error('password')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -66,7 +66,7 @@
                         </div>
                         <div class="register-form">
                             <label for="password_confirmation" class="form-label">Konfirmasi Password</label>
-                            <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" placeholder="Konfirmasi Password" required>
+                            <input type="password" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" placeholder="Konfirmasi Password">
                             @error('password_confirmation')
                                 <div class="invalid-feedback">
                                     {{ $message }}
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="register-right">
-            <img src="img/img1.png" class="d-block w-100" alt="KOPIN">
+            <img src="img/login.png" class="d-block w-100" alt="KOPIN">
             <a href="/" class="btn-home nuxt-link-active">Kembali ke homepage</a>
         </div>
     </section>
